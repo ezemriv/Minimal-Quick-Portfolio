@@ -1,13 +1,13 @@
 title: Ezequiel Rivero, PhD # your name (or website title) here
 logo: "/images/logo1.png" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  With a PhD and a strong background in cancer research, I have transitioned into the field of data science, driven by a passion for uncovering hidden patterns and solving problems. Leveraging over 5 years of experience in data cleaning, statistical analysis, and extracting actionable insights, I am now focusing on expanding my knowledge in machine learning.
+  With a PhD in cancer research, I transitioned into data science, driven by a passion for uncovering patterns and solving problems. With 5+ years of experience in data cleaning, statistical analysis, and extracting insights, I am expanding my knowledge in machine learning.
   <br><br>
-  Proficient in R and Python, I am dedicated to applying my skills to drive impactful data-driven decisions. I am particularly interested in applying my expertise in the healthcare or sustainable sectors.
-  <br><br>
-  Feel free to connect with me on LinkedIn. 
+  Proficient in R and Python, I am dedicated to driving impactful data-driven decisions, particularly in healthcare and sustainable sectors. Feel free to connect with me on LinkedIn.
   <br><br>
   <a href="https://www.linkedin.com/in/ezequielmrivero/">My LinkedIn Profile</a>
+  <br><br>
+  <a href="https://scholar.google.com/citations?user=Bg4eGzkAAAAJ&hl=en">My Publications</a>
   
 plugins:
   - jekyll-remote-theme
