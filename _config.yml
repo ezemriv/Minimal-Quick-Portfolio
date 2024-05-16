@@ -6,8 +6,6 @@ description: > # your text below (remove <br> elements if you don't need line br
   Feel free to connect with me on LinkedIn. 
   <br><br>
   <a href="https://www.linkedin.com/in/ezequielmrivero/">My LinkedIn Profile</a>
-  <a href="https://www.linkedin.com/in/ezequielmrivero/">My publications</a> 
-
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
