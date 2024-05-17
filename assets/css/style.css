@@ -14,34 +14,16 @@ body {
 
 /* Header Styles */
 header h1 {
-    color: #00bfff; /* Light blue color */
+    color: #002ffec6; /* Light blue color */
 }
 
 header a {
     text-decoration: none;
 }
 
-/* Profile Info Styling (Scrolling) */
-.profile-info {
-    max-height: 200px;
-    overflow-y: auto;
-    padding: 15px;
-    border: 1px solid #ddd;
-}
-
-/* Scrollbar Styling (Optional - WebKit browsers) */
-.profile-info::-webkit-scrollbar {
-    width: 8px;
-}
-
-.profile-info::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-}
-
 /* Project Section Styles */
 section h2, section h3 {
-    color: #DC143C;
+    color: #1a20b7c8;
 }
 
 section ul {
