@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: sans-serif;  /* Choose your preferred font */
+    font-family: Arial, sans-serif; /* Provide a fallback font */
     line-height: 1.6;
     margin: 0;
-    color: #333;             /* Text color */
+    color: #000000; /* Fallback text color */
 }
 
 .wrapper {
@@ -14,19 +14,19 @@ body {
 
 /* Header Styles */
 header h1 {
-    color: {{ site.colors.crimson }}; /* Use your custom color */
+    color: #00bfff; /* Light blue color */
 }
 
 header a {
-    text-decoration: none;  /* Remove underlines from links */
+    text-decoration: none;
 }
 
 /* Profile Info Styling (Scrolling) */
 .profile-info {
-    max-height: 200px;      /* Adjust the maximum height as needed */
-    overflow-y: auto;      /* Enable vertical scrolling */
-    padding: 15px;         /* Add padding for visual comfort */
-    border: 1px solid #ddd; /* Add a subtle border */
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 15px;
+    border: 1px solid #ddd;
 }
 
 /* Scrollbar Styling (Optional - WebKit browsers) */
@@ -41,12 +41,12 @@ header a {
 
 /* Project Section Styles */
 section h2, section h3 {
-    color: {{ site.colors.crimson }}; 
+    color: #DC143C;
 }
 
 section ul {
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
 }
 
 section li {
@@ -55,19 +55,19 @@ section li {
 
 /* Image Styles */
 section img {
-    max-width: 100%;  /* Make images responsive */
+    max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
 
 /* Footer Styles */
 footer {
-    text-align: center;  /* Center the footer content */
+    text-align: center;
     margin-top: 20px;
 }
 
 /* Icon Styles */
 .icons img {
     vertical-align: middle;
-    margin-right: 10px; /* Space between icons */
+    margin-right: 10px;
 }
