@@ -1,3 +1,4 @@
+/* Header Styles */
 header {
     text-align: center; /* Center all elements within the header */
 }
@@ -22,7 +23,7 @@ body {
     padding: 20px;
 }
 
-/* Header Styles */
+/* Header Text Styles */
 header h1 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
     font-size: 30px;                               /* Updated font size */
@@ -75,23 +76,47 @@ footer {
 }
 
 /* Icon Styles */
-.icons img {
+.icon-links {
+    display: flex; /* Enable flexbox for icons */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    margin-top: 10px; /* Add top margin for spacing */
+}
+
+.icon-link img {
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: 10px; /* Add right margin for spacing */
 }
 
-.profile-info { 
-    display: flex;     /* Enable flexbox for the container */
-    justify-content: center; /* Center items horizontally */
-    align-items: center;    /* Center items vertically (optional) */
+.icon-link img:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
 }
 
-.profile-info a {
-    display: inline-block; /* Make the links inline-block */
-    margin: 0 10px;      /* Add spacing (10px on each side) */
+/* "Go to main" Link Styles */
+.go-to-main {
+    text-align: center; /* Center the link */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+.go-to-main h2 {
+    font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
+    font-size: 18px; /* Updated font size */
+    color: #000000;
 }
 
 .profile-info {
     max-width: 450px; /* Or adjust to your preferred width */
     margin: 0 auto; /* Center the container horizontally */
+    padding: 15px; /* Add padding for visual comfort */
+    border: 1px solid #ddd; /* Add a subtle border */
+}
+
+/* Scrollbar Styling (Optional - WebKit browsers) */
+.profile-info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profile-info::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
 }
