@@ -80,3 +80,17 @@ footer {
     margin-right: 15px;
 }
 
+.profile-info { 
+    display: flex;     /* Enable flexbox for the container */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;    /* Center items vertically (optional) */
+}
+
+.profile-info a {
+    margin: 0 10px;  /* Add some spacing between the icons */
+}
+
+.profile-info {
+    max-width: 600px; /* Or adjust to your preferred width */
+    margin: 0 auto; /* Center the container horizontally */
+}
