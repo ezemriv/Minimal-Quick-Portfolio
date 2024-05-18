@@ -43,7 +43,7 @@ section h2 {
 
 section h3 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 18px;                               /* Updated font size */
+    font-size: 16px;                               /* Updated font size */
     color: #000000;
 }
 
@@ -85,7 +85,7 @@ footer {
 
 .icon-link img {
     vertical-align: middle;
-    margin-right: 10px; /* Add right margin for spacing */
+    margin-right: 20px; /* Add right margin for spacing */
 }
 
 .icon-link img:last-child {
@@ -108,15 +108,6 @@ footer {
     max-width: 450px; /* Or adjust to your preferred width */
     margin: 0 auto; /* Center the container horizontally */
     padding: 15px; /* Add padding for visual comfort */
-    border: 1px solid #ddd; /* Add a subtle border */
 }
 
-/* Scrollbar Styling (Optional - WebKit browsers) */
-.profile-info::-webkit-scrollbar {
-    width: 8px;
-}
 
-.profile-info::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-}
