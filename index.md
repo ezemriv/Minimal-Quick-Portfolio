@@ -1,4 +1,8 @@
 ---
+layout: homepage
+title: "Ezequiel M Rivero"
+
+---
 ## PORTFOLIO
 
 ---
