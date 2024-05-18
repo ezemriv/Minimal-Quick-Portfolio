@@ -1,3 +1,9 @@
+/* Homepage Styles */
+section a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;         /* Inherit color from parent */
+}
+
 /* Header Styles */
 header {
     text-align: center; /* Center all elements within the header */
@@ -50,7 +56,7 @@ section h3 {
 section h4 {
     font-family: 'Lato', sans-serif; /* Use Lato for h4 */
     font-weight: 700;               /* Make h4 bold */
-    font-size: 18px;
+    font-size: 20px;
     color: #b7ae7c;
 }
 

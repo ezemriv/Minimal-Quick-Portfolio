@@ -1,33 +1,43 @@
 ---
 layout: homepage
-title: "Eze´s Portfolio"
-
+title: "Eze's Portfolio"
 ---
-## PORTFOLIO
+
+<div style="text-align:center;">
+    <h2>PORTFOLIO</h2>
+</div>
 
 ---
 
 ### Research Projects
 
 #### [Project 1 Title](/sample_page)
-<img src="images\underconstruction4.png?raw=true"/>
+<a href="/sample_page">
+    <img src="images/underconstruction4.png?raw=true" alt="Project 1" />
+</a>
 
 ---
+
 #### [Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images\underconstruction1.png?raw=true"/>
+<a href="/pdf/sample_presentation.pdf">
+    <img src="images/underconstruction1.png?raw=true" alt="Project 2" />
+</a>
 
 ---
+
 #### [Project 3 Title](http://example.com/)
-<img src="images\underconstruction2.png?raw=true"/>
+<a href="http://example.com/">
+    <img src="images/underconstruction2.png?raw=true" alt="Project 3" />
+</a>
 
 ---
 
 ### Personal Projects
 
 #### [Project 1 Title](/sample_page)
-<img src="images\underconstruction3.png?raw=true"/>
-
----
+<a href="/sample_page">
+    <img src="images/underconstruction3.png?raw=true" alt="Project 4" />
+</a>
 
 
 
