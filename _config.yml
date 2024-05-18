@@ -5,15 +5,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   PhD Cancer Researcher turned Data Scientist with 10+ years experience. Skilled in data cleaning, statistical analysis, and extracting insights. Currently expanding my skillset in machine learning. Proficient in R and Python. 
   Passionate about data-driven solutions in healthcare and sustainability. Love problem-solving, nature, and sports. Let's connect on LinkedIn!
   <br><br>
-  <a href="https://www.linkedin.com/in/ezequielmrivero/" class="icon-link">
-    <img src="/images/linkedin.svg" alt="LinkedIn Profile" style="width:32px; height:32px;">
-  </a>
-  <a href="https://github.com/ezemriv" class="icon-link">
-    <img src="/images/github.svg" alt="GitHub Profile" style="width:32px; height:32px;">
-  </a>
-  <a href="https://scholar.google.com/citations?user=Bg4eGzkAAAAJ&hl=en" class="icon-link">
-    <img src="/images/publications.svg" alt="Google Scholar Publications" style="width:32px; height:32px;">
-  </a>
+  <a href="https://www.linkedin.com/in/ezequielmrivero/" class="icon-link"><img src="/images/linkedin.svg" alt="LinkedIn Profile" style="width:32px; height:32px;"></a><a href="https://github.com/ezemriv" class="icon-link"><img src="/images/github.svg" alt="GitHub Profile" style="width:32px; height:32px;"></a><a href="https://scholar.google.com/citations?user=Bg4eGzkAAAAJ&hl=en" class="icon-link"><img src="/images/publications.svg" alt="Google Scholar Publications" style="width:32px; height:32px;"></a>
 
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here

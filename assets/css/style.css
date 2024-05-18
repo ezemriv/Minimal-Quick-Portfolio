@@ -87,10 +87,11 @@ footer {
 }
 
 .profile-info a {
-    margin: 0 10px;  /* Add some spacing between the icons */
+    display: inline-block; /* Make the links inline-block */
+    margin: 0 10px;      /* Add spacing (10px on each side) */
 }
 
 .profile-info {
-    max-width: 600px; /* Or adjust to your preferred width */
+    max-width: 300px; /* Or adjust to your preferred width */
     margin: 0 auto; /* Center the container horizontally */
 }
