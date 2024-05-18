@@ -1,3 +1,11 @@
+header {
+    text-align: center; /* Center all elements within the header */
+}
+
+header img { /* Specifically target the logo image */
+    display: block;    /* Make the image a block element */
+    margin: 0 auto 20px; /* Top/bottom margin of 0, left/right auto for centering */
+}
 
 /* General Styles */
 body {
@@ -8,11 +16,11 @@ body {
     color: #000000;
 }
 
-/*.wrapper {
+.wrapper {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-}*/
+}
 
 /* Header Styles */
 header h1 {
