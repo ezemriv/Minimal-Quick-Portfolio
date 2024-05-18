@@ -1,4 +1,4 @@
-### Ezequiel Rivero's data science and ML portfolio
+### Ezequiel Rivero's Data Science and ML Portfolio
 
 Welcome to my data science portfolio! Here, you'll find a collection of projects showcasing my expertise in data visualization, statistical analysis, and machine learning. 
 
