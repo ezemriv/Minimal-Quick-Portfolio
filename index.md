@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: "Ezequiel M Rivero"
+title: "Eze´s Portfolio"
 
 ---
 ## PORTFOLIO

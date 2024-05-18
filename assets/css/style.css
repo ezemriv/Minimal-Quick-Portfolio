@@ -107,7 +107,13 @@ footer {
 .profile-info {
     max-width: 450px; /* Or adjust to your preferred width */
     margin: 0 auto; /* Center the container horizontally */
-    padding: 5px; /* Add padding for visual comfort */
+    padding: 0px; /* Add padding for visual comfort */
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+}
 
