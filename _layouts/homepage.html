@@ -24,19 +24,16 @@
     }
 
     header h1 {
-      margin-bottom: 0; /* Remove default bottom margin */
+      margin-bottom: 10px; /* Remove default bottom margin */
     }
 
-    .phd {
-      font-weight: bold; /* Make the "PhD" text bold */
-    }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <header>
       <h1><a href="{{ '/' | absolute_url }}" style="color: black;">{{ site.title | default: site.github.repository_name }}</a></h1>
-      <div class="phd">Data Scientist | PhD</div> <!-- Add "PhD" text here -->
+      <h3 class="phd">Data Scientist | PhD</h3> <!-- Add "PhD" text here -->
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="Logo" style="margin-bottom: 20px;" />
       {% endif %}
