@@ -39,7 +39,12 @@ title: "Eze's Portfolio"
     <img src="images/underconstruction3.png?raw=true" alt="Project 4" />
 </a>
 
+---
 
+#### [Project 3 Title](http://example.com/)
+<a href="http://example.com/">
+    <img src="images/underconstruction2.png?raw=true" alt="Project 3" />
+</a>
 
 
 
