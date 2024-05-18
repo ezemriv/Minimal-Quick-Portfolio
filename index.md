@@ -1,8 +1,8 @@
-## PORTFOLIO
+# PORTFOLIO
 
 ---
 
-### Research Projects
+## Research Projects
 
 [Project 1 Title](/sample_page)
 <img src="images\underconstruction4.png?raw=true"/>
