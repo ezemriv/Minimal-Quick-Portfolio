@@ -125,7 +125,8 @@ hr {
 }
 
 .phd {
-    font-family: 'Abril Fatface', cursive; /* Use Abril Fatface font */
-    font-size: 24px; /* Adjust font size */
-    color: #000000; /* Adjust font color */
+    font-family: 'Lato', sans-serif; /* Use Lato for h4 */
+    font-weight: bold;               /* Make h4 bold */
+    font-size: 20px;
+    color: #70706f;
   }

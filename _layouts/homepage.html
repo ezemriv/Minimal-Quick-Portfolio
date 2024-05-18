@@ -14,7 +14,7 @@
   <style>
     .about-me h4 {
       font-family: 'Lato', sans-serif; /* Use the Lato font family */
-      font-size: 20px; /* Larger font size */
+      font-size: 18px; /* Larger font size */
       font-weight: bold; /* Bold font weight */
       margin-bottom: 5px; /* Add some bottom margin for spacing */
     }
@@ -35,8 +35,8 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1><a href="{{ '/' | absolute_url }}" style="margin-bottom: 5px;color: black;">{{ site.title | default: site.github.repository_name }}</a></h1>
-      <h3 class="phd">Data Scientist | PhD</h3> <!-- Add "PhD" text here -->
+      <h1 style="margin-bottom: 5px;"><a href="{{ '/' | absolute_url }}" style="color: black;">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <h3 class="phd" style="margin-top: 0;">Data Scientist | PhD</h3> <!-- Add "PhD" text here -->
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="Logo" style="margin-bottom: 15px;margin-top: 15px;" />
       {% endif %}
