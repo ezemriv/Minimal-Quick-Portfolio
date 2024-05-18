@@ -18,11 +18,25 @@
       font-weight: bold; /* Bold font weight */
       margin-bottom: 5px; /* Add some bottom margin for spacing */
     }
-    /* Your custom styles here */
     header {
       text-align: center; /* Center all elements within the header */
     }
-
+    .portfolio-columns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .portfolio-columns .research-projects,
+    .portfolio-columns .personal-projects {
+      width: 48%;
+    }
+    .portfolio-columns .project img {
+      width: 100%;
+      height: auto;
+    }
+    .portfolio-columns .project {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -53,7 +67,47 @@
     </header>
     <hr> <!-- This adds a horizontal line -->
     <section>
-      {{ content }}
+      <div style="text-align:center;">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="portfolio-columns">
+        <div class="research-projects">
+          <h3>Research Projects</h3>
+          <div class="project">
+            <a href="/sample_page">
+              <h4>Project 1 Title</h4>
+              <img src="images/underconstruction4.png?raw=true" alt="Project 1" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="/pdf/sample_presentation.pdf">
+              <h4>Project 2 Title</h4>
+              <img src="images/underconstruction1.png?raw=true" alt="Project 2" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="http://example.com/">
+              <h4>Project 3 Title</h4>
+              <img src="images/underconstruction2.png?raw=true" alt="Project 3" />
+            </a>
+          </div>
+        </div>
+        <div class="personal-projects">
+          <h3>Personal Projects</h3>
+          <div class="project">
+            <a href="/sample_page">
+              <h4>Project 1 Title</h4>
+              <img src="images/underconstruction3.png?raw=true" alt="Project 4" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="http://example.com/">
+              <h4>Project 3 Title</h4>
+              <img src="images/underconstruction2.png?raw=true" alt="Project 3" />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       {% if site.github.is_project_page %}

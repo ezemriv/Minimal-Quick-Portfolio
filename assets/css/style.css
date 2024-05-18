@@ -130,3 +130,25 @@ hr {
     font-size: 20px;
     color: #70706f;
   }
+
+  /* Portfolio Section Styles */
+.portfolio-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .portfolio-columns .research-projects,
+  .portfolio-columns .personal-projects {
+    width: 48%;
+  }
+  
+  .portfolio-columns .project img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-columns .project {
+    margin-bottom: 20px;
+  }
+  
