@@ -16,8 +16,8 @@ body {
 /* Header Styles */
 header h1 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 20px;                               /* Updated font size */
-    color: #6c5449;
+    font-size: 22px;                               /* Updated font size */
+    color: #000000;
 }
 
 header a {
@@ -27,20 +27,20 @@ header a {
 /* Project Section Styles */
 section h2 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 18px;                               /* Updated font size */
-    color: #7a7d72;
+    font-size: 20px;                               /* Updated font size */
+    color: #000000;
 }
 
 section h3 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 14px;                               /* Updated font size */
-    color: #7a7d72;
+    font-size: 16px;                               /* Updated font size */
+    color: #000000;
 }
 
 section h4 {
     font-family: "Aptos SemiBold", sans-serif; /* Updated font family */
-    font-size: 12px;                               /* Updated font size */
-    color: #7a7d72;
+    font-size: 14px;                               /* Updated font size */
+    color: #000000;
 }
 
 section ul {

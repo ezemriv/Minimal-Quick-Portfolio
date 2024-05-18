@@ -1,10 +1,10 @@
-# PORTFOLIO
+## PORTFOLIO
 
 ---
 
 ## Research Projects
 
-[Project 1 Title](/sample_page)
+### [Project 1 Title](/sample_page)
 <img src="images\underconstruction4.png?raw=true"/>
 
 ---
@@ -17,9 +17,9 @@
 
 ---
 
-### Personal Projects
+## Personal Projects
 
-[Project 1 Title](/sample_page)
+### [Project 1 Title](/sample_page)
 <img src="images\underconstruction3.png?raw=true"/>
 
 ---
