@@ -17,7 +17,7 @@ header img { /* Specifically target the logo image */
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0;
     color: #000000;
@@ -32,7 +32,7 @@ body {
 /* Header Styles */
 header h1 {
     font-family: 'Abril Fatface', cursive; /* Use Abril Fatface for h1 */
-    font-size: 30px;
+    font-size: 40px;
     color: #000000;
 }
 
@@ -43,13 +43,13 @@ header a {
 /* Project Section Styles */
 section h2 {
     font-family: 'Abril Fatface', cursive; /* Use Abril Fatface for h2 */
-    font-size: 24px;
+    font-size: 28px;
     color: #000000;
 }
 
 section h3 {
     font-family: 'Abril Fatface', cursive; /* Use Abril Fatface for h3 */
-    font-size: 18px;
+    font-size: 24px;
     color: #000000;
 }
 
@@ -57,7 +57,7 @@ section h4 {
     font-family: 'Lato', sans-serif; /* Use Lato for h4 */
     font-weight: 700;               /* Make h4 bold */
     font-size: 20px;
-    color: #b7ae7c;
+    color: #70706f;
 }
 
 section ul {
