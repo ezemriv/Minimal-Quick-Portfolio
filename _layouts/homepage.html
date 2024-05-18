@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Aptos+Narrow:wght@400;700&family=Sequel+Sans+Bold+Head:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}</title>
   {% seo %}
@@ -20,7 +20,7 @@
         <img src="{{ site.logo | relative_url }}" alt="Logo" style="margin-bottom: 20px;" />
       {% endif %}
       <div class="about-me">
-        <h2>About Me</h2>
+        <h4>About Me</h4>
       </div>
       <div class="profile-info">
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -37,9 +37,11 @@
         </div>
       </div>
     </header>
+    <hr> <!-- This adds a horizontal line -->
     <section>
       {{ content }}
     </section>
+    <hr> <!-- This adds a horizontal line -->
     <footer>
       {% if site.github.is_project_page %}
       <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>

@@ -10,8 +10,8 @@ header img { /* Specifically target the logo image */
 
 /* General Styles */
 body {
-    font-family: "Apto Narrow", sans-serif; /* Updated font family */
-    font-size: 12px;                      /* Updated font size */
+    font-family: 'Lato', sans-serif; /* Use Lato for body text */
+    font-size: 12px;
     line-height: 1.6;
     margin: 0;
     color: #000000;
@@ -23,10 +23,10 @@ body {
     padding: 20px;
 }
 
-/* Header Text Styles */
+/* Header Styles */
 header h1 {
-    font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 30px;                               /* Updated font size */
+    font-family: 'Abril Fatface', cursive; /* Use Abril Fatface for h1 */
+    font-size: 30px;
     color: #000000;
 }
 
@@ -36,21 +36,22 @@ header a {
 
 /* Project Section Styles */
 section h2 {
-    font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 24px;                               /* Updated font size */
+    font-family: 'Abril Fatface', cursive; /* Use Abril Fatface for h2 */
+    font-size: 24px;
     color: #000000;
 }
 
 section h3 {
-    font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 16px;                               /* Updated font size */
+    font-family: 'Abril Fatface', cursive; /* Use Abril Fatface for h3 */
+    font-size: 18px;
     color: #000000;
 }
 
 section h4 {
-    font-family: "Aptos SemiBold", sans-serif; /* Updated font family */
-    font-size: 14px;                               /* Updated font size */
-    color: #000000;
+    font-family: 'Lato', sans-serif; /* Use Lato for h4 */
+    font-weight: 700;               /* Make h4 bold */
+    font-size: 14px;
+    color: #b7ae7c;
 }
 
 section ul {
@@ -98,7 +99,7 @@ footer {
     margin-top: 10px; /* Add top margin for spacing */
 }
 
-.go-to-main h2 {
+.go-to-main h4 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
     font-size: 18px; /* Updated font size */
     color: #000000;
