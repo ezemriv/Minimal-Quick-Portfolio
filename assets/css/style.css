@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: "Apto Narrow", sans-serif; /* Updated font family */
@@ -7,16 +8,16 @@ body {
     color: #000000;
 }
 
-.wrapper {
+/*.wrapper {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-}
+}*/
 
 /* Header Styles */
 header h1 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 22px;                               /* Updated font size */
+    font-size: 30px;                               /* Updated font size */
     color: #000000;
 }
 
@@ -27,13 +28,13 @@ header a {
 /* Project Section Styles */
 section h2 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 20px;                               /* Updated font size */
+    font-size: 24px;                               /* Updated font size */
     color: #000000;
 }
 
 section h3 {
     font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
-    font-size: 16px;                               /* Updated font size */
+    font-size: 18px;                               /* Updated font size */
     color: #000000;
 }
 
