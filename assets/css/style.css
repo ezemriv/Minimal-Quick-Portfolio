@@ -152,3 +152,13 @@ hr {
     margin-bottom: 20px;
   }
   
+  @media (max-width: 768px) {
+    .portfolio-columns {
+      flex-direction: column;
+    }
+    .portfolio-columns .research-projects,
+    .portfolio-columns .personal-projects {
+      width: 100%;
+    }
+  }
+  
