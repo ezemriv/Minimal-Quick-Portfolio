@@ -176,7 +176,6 @@ hr {
   /* iframe Styles (like the plotly sankey) */
 
   .iframe-container {
-    display: flex;
     justify-content: center;
   }
   
