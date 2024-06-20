@@ -179,9 +179,9 @@ hr {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 50%; /* Adjust aspect ratio as needed */
     overflow: hidden;
-    max-width: 100%; /* Ensure it doesn't exceed its parent's width */
+    max-width: 1200px; /* Set maximum width for the iframe container */
     margin: 0 auto; /* Center the iframe container */
   }
   
@@ -193,12 +193,19 @@ hr {
     height: 100%;
     border: 0;
   }
-
-  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+  
+  @media (max-width: 1200px) {
     .iframe-container {
-      padding-bottom: 100%; /* Change aspect ratio for mobile */
+      padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
     }
   }
+  
+  @media (max-width: 768px) {
+    .iframe-container {
+      max-width: 100%; /* Ensure full width on smaller screens */
+      padding-bottom: 100%; /* Adjust aspect ratio for mobile */
+    }
+  }  
 
   /* Buttom view on... style */
 
