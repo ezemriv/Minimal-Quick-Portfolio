@@ -18,5 +18,8 @@ A crucial aspect of the food system's environmental impact is global food trade.
 <div class="iframe-container">
   <iframe frameborder="0" scrolling="no" src="//plotly.com/~ezemriv/7.embed"></iframe>
 </div>
+<div class="button-container">
+    <a href="//plotly.com/~ezemriv/7" class="view-full-plot">View on plotly</a>
+  </div>
 
 By analyzing these trade flows, we can identify areas for potential emission reduction strategies, such as promoting local food production and optimizing transportation networks.

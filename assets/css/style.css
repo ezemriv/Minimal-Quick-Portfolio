@@ -199,3 +199,25 @@ hr {
       padding-bottom: 100%; /* Change aspect ratio for mobile */
     }
   }
+
+  /* Buttom view on... style */
+
+  .button-container {
+    text-align: center;
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+  
+  .view-full-plot {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d3133; /* Adjust to your preferred button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-full-plot:hover {
+    background-color: #2a2c2e; /* Darker shade on hover */
+  }
