@@ -162,7 +162,7 @@ hr {
   .portfolio-columns .project {
     margin-bottom: 20px;
   }
-  
+
   @media (max-width: 768px) {
     .portfolio-columns {
       flex-direction: column;
@@ -171,4 +171,17 @@ hr {
     .portfolio-columns .personal-projects {
       width: 100%;
     }
+  }
+
+  /* iframe Styles (like the plotly sankey) */
+
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .iframe-container iframe {
+    width: 100%;
+    max-width: 800px; /* Adjust this value based on your desired maximum width */
+    height: auto;
   }
