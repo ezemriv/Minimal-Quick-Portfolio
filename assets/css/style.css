@@ -209,8 +209,8 @@ hr {
   
   .view-full-plot {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #2d3133; /* Adjust to your preferred button color */
+    padding: 7px 17px;
+    background-color: #353a3d; /* Adjust to your preferred button color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -219,5 +219,5 @@ hr {
   }
   
   .view-full-plot:hover {
-    background-color: #2a2c2e; /* Darker shade on hover */
+    background-color: #222324; /* Darker shade on hover */
   }
