@@ -131,23 +131,34 @@ hr {
     color: #70706f;
   }
 
-  /* Portfolio Section Styles */
-.portfolio-columns {
+  .about-me h4 {
+    font-family: 'Lato', sans-serif; /* Use the Lato font family */
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 5px; /* Add some bottom margin for spacing */
+  }
+
+  header {
+    text-align: center; /* Center all elements within the header */
+  }
+
+  .portfolio-columns {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
   }
-  
+
   .portfolio-columns .research-projects,
   .portfolio-columns .personal-projects {
     width: 48%;
   }
-  
+
   .portfolio-columns .project img {
     width: 100%;
     height: auto;
   }
-  
+
   .portfolio-columns .project {
     margin-bottom: 20px;
   }
