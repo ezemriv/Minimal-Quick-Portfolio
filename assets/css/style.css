@@ -161,4 +161,23 @@ hr {
       width: 100%;
     }
   }
+
+  .iframe-container {
+    width: 100%; /* Make the container take up the full width */
+    overflow: hidden; /* Hide iframe overflow if it exceeds container */
+    position: relative; /* For aspect ratio trick below */
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Optional: Set a minimum height to prevent the iframe from collapsing */
+  .iframe-container {
+    min-height: 500px; /* Adjust as needed */
+  }
   
