@@ -16,7 +16,7 @@
   <div class="wrapper">
     <header>
       <h1 style="margin-bottom: 0px;"><a href="{{ '/' | absolute_url }}" style="color: black;">{{ site.title | default: site.github.repository_name }}</a></h1>
-      <h3 class="phd" style="margin-top: 0;">Data Scientist | PhD</h3> <!-- Add "PhD" text here -->
+      <h3 class="phd" style="margin-top: 0;">Data Scientist | PhD</h3>
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="Logo" style="margin-bottom: 15px;margin-top: 15px;" />
       {% endif %}
@@ -38,7 +38,7 @@
         </div>
       </div>
     </header>
-    <hr> <!-- This adds a horizontal line -->
+    <hr>
     <section>
       <div style="text-align:center;">
         <h2>PORTFOLIO</h2>
@@ -46,45 +46,20 @@
       <hr>
       <div class="portfolio-columns">
         <div class="research-projects">
-          <h3>Research Projects</h3>
-          <div class="project">
-            <a href="/sample_page">
-              <h4>Project 1 Title</h4>
-              <img src="images/underconstruction4.png?raw=true" alt="Project 1" />
-            </a>
-          </div>
-          <div class="project">
-            <a href="/pdf/sample_presentation.pdf">
-              <h4>Project 2 Title</h4>
-              <img src="images/underconstruction1.png?raw=true" alt="Project 2" />
-            </a>
-          </div>
-          <div class="project">
-            <a href="http://example.com/">
-              <h4>Project 3 Title</h4>
-              <img src="images/underconstruction2.png?raw=true" alt="Project 3" />
-            </a>
-          </div>
+          {% capture research_projects %}
+          {% include_relative research_projects.md %}
+          {% endcapture %}
+          {{ research_projects | markdownify }}
         </div>
         <div class="personal-projects">
-          <h3>Personal Projects</h3>
-          <div class="project">
-            <a href="/fao_project">
-              <h4>Analysis and Forecast of Carbon Footprint from Agrifood Systems</h4>
-              <img src="images\sankey_cover.jpg?raw=true" alt="Project 4" />
-              <img src="https://img.shields.io/badge/Python-white?logo=Python" alt="Python Badge" style="width:70px; height:28px;"/>
-            </a>
-          </div>
-          <div class="project">
-            <a href="http://example.com/">
-              <h4>Project 3 Title</h4>
-              <img src="images/underconstruction2.png?raw=true" alt="Project 3" />
-            </a>
-          </div>
+          {% capture personal_projects %}
+          {% include_relative personal_projects.md %}
+          {% endcapture %}
+          {{ personal_projects | markdownify }}
         </div>
       </div>
     </section>
-    <hr> <!-- This adds a horizontal line -->
+    <hr>
     <footer>
       <p><small>Hosted on GitHub Pages</small></p>
     </footer>
