@@ -193,3 +193,9 @@ hr {
     height: 100%;
     border: 0;
   }
+
+  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .iframe-container {
+      padding-bottom: 100%; /* Change aspect ratio for mobile */
+    }
+  }
