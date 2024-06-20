@@ -11,9 +11,9 @@ title: "Eze's Portfolio"
 
 ### Research Projects
 
-#### [Project 1 Title](/sample_page)
+#### [Prognostic Value of Breast Cancer Molecular Markers](/sample_page)
 <a href="/sample_page">
-    <img src="images/underconstruction4.png?raw=true" alt="Project 1" />
+    <img src="images\underconstruction1.png?raw=true" alt="Project 1" />
 </a>
 
 ---
