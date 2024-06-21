@@ -116,14 +116,26 @@ footer {
 
 /* "Go to main" Link Styles */
 .go-to-main {
-    text-align: center; /* Center the link */
-    margin-top: 10px; /* Add top margin for spacing */
+  text-align: center; /* Center the link */
+  margin-top: 10px; /* Add top margin for spacing */
 }
 
 .go-to-main h4 {
-    font-family: "Lato", sans-serif; /* Updated font family */
-    font-size: 18px; /* Updated font size */
-    color: #000000;
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-size: 18px;
+color: #000000; /* Black color for the text */
+}
+
+/* Add styles for the link */
+.go-to-main a {
+color: #000000; /* Black color for the link */
+text-decoration: none; /* Remove underline */
+}
+
+/* Add hover effect for the link */
+.go-to-main a:hover {
+color: #ADD8E6; /* Light blue color for the link on hover */
 }
 
 .profile-info {
