@@ -3,15 +3,15 @@ layout: pages
 title: "FAO Food Carbon Footprint"
 ---
 
-### Analysis and Forecast of Carbon Footprint from Agrifood Systems
+# Analysis and Forecast of Carbon Footprint from Agrifood Systems
 
 **Project description:** This project explores the environmental impact of food systems using data from the Food and Agriculture Organization of the United Nations (FAOSTAT) and machine learning techniques. By analyzing production, trade, consumption, and emissions data, we can gain valuable insights into current trends and forecast future developments in the global food system.
 
-#### 1. Data Source
+## 1. Data Source
 
 FAOSTAT provides a comprehensive dataset on food and agriculture, encompassing production, trade, consumption, emissions, and other relevant factors. This rich data source serves as the foundation for our analysis.
 
-#### 2. Analysis of GHG Emissions from Global Food Trading
+## 2. Analysis of GHG Emissions from Global Food Trading
 
 A crucial aspect of the food system's environmental impact is global food trade. The Sankey diagram below, created with Plotly, depicts the flow of CO2 equivalent emissions (kg CO2eq) associated with food trade between continents over time. This interactive visualization allows you to explore the data by continent (target or importing) using the "play" button. The color of the connections corresponds to the selected continent.
 
