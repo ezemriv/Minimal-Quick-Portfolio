@@ -94,16 +94,15 @@ section img {
 /* Badges Styles */
 .badge {
   display: inline-flex; /* Permite alinear el contenido horizontalmente */
-  align-items: center; /* Centra verticalmente el contenido */
-  padding: 0.5px 1px; /* Espacio interno para el texto */
-  border-radius: 1px;  /* Bordes redondeados */
   height: 5px;       /* Altura fija para todas las insignias */
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
 .badge img {
   margin-right: 1px; /* Espacio entre el logo y el texto */
-  height: 100%;      /* Ajusta la altura del logo a la altura de la insignia */
+  max-width: 100px;
+  height: 5px;
+  width: auto; 
 }
 
 /* Footer Styles */
