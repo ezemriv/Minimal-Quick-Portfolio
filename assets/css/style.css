@@ -91,6 +91,13 @@ section img {
     margin-bottom: 15px;
 }
 
+/* Badges Styles */
+.badge {
+  width: auto;
+  max-width: 200px;
+  display: inline;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -121,7 +128,7 @@ footer {
 }
 
 .go-to-main h4 {
-    font-family: "Sequel Sans Bold Head", sans-serif; /* Updated font family */
+    font-family: "Lato", sans-serif; /* Updated font family */
     font-size: 18px; /* Updated font size */
     color: #000000;
 }
