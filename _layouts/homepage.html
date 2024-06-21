@@ -41,22 +41,22 @@
     <hr>
     <section>
       <div style="text-align:center;">
-        <h1>PORTFOLIO</h1>
+        <h1 style="font-size: 32px;">PORTFOLIO</h1>
       </div>
       <hr>
       <div class="portfolio-columns">
-        <div class="research-projects">
-          {% capture research_projects %}
-          {% include_relative research_projects.md %}
-          {% endcapture %}
-          {{ research_projects }}
-        </div>
-        <div class="personal-projects">
-          {% capture personal_projects %}
-          {% include_relative personal_projects.md %}
-          {% endcapture %}
-          {{ personal_projects | markdownify }}
-        </div>
+          <div class="research-projects markdown-content">
+              {% capture research_projects %}
+              {% include_relative research_projects.md %}
+              {% endcapture %}
+              {{ research_projects | markdownify }}
+          </div>
+          <div class="personal-projects markdown-content">
+              {% capture personal_projects %}
+              {% include_relative personal_projects.md %}
+              {% endcapture %}
+              {{ personal_projects | markdownify }}
+          </div>
       </div>
     </section>
     <hr>
