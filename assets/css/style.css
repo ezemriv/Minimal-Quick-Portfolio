@@ -93,9 +93,9 @@ section img {
 
 /* Badges Styles */
 .badge {
-  width: 50px;
-  height: 5px;
-  max-width: 50px;
+  width: auto;
+  height: 6px;
+  max-width: 100px;
   display: inline;
 }
 
