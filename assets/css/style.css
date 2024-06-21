@@ -91,20 +91,6 @@ section img {
     margin-bottom: 15px;
 }
 
-/* Badges Styles */
-.badge {
-  display: inline-flex; /* Permite alinear el contenido horizontalmente */
-  height: 5px;       /* Altura fija para todas las insignias */
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-}
-
-.badge img {
-  margin-right: 1px; /* Espacio entre el logo y el texto */
-  max-width: 100px;
-  height: 5px;
-  width: auto; 
-}
-
 /* Footer Styles */
 footer {
     text-align: center;
