@@ -14,7 +14,6 @@ header img { /* Specifically target the logo image */
     margin: 0 auto 20px; /* Top/bottom margin of 0, left/right auto for centering */
 }
 
-Got it! Apologies for the oversight. Let's integrate those missing header styles into your CSS:
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif; 
