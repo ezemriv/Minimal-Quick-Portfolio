@@ -75,7 +75,7 @@ section h3 {
     color: #000000;
 }
 
-section ul {
+section ul {                                         BUG
     list-style: none;
     padding: 0;
 }
