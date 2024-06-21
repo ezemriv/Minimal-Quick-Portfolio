@@ -45,17 +45,22 @@
       </div>
       <hr>
       <div class="portfolio-columns">
-          <div class="research-projects">
-              {% capture research_projects %}
-              {% include_relative research_projects.md %}
-              {% endcapture %}
-              {{ research_projects | markdownify }}
+        <div class="research-projects">
+          <h1>Research Projects</h1>
+          <div class="project">
+            {% capture research_projects %}
+            {% include_relative research_projects.md %}
+            {% endcapture %}
+            {{ research_projects | markdownify }}
           </div>
-          <div class="personal-projects">
-              {% capture personal_projects %}
-              {% include_relative personal_projects.md %}
-              {% endcapture %}
-              {{ personal_projects | markdownify }}
+        </div>
+        <div class="personal-projects">
+          <h1>Personal Projects</h1>
+          <div class="project">
+            {% capture personal_projects %}
+            {% include_relative personal_projects.md %}
+            {% endcapture %}
+            {{ personal_projects | markdownify }}
           </div>
       </div>
     </section>
