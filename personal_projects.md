@@ -1,8 +1,4 @@
-# Personal Projects
-
-## Subtitle
-
-### Subsubtite
+<h1>Personal Projects</h1>
 
 ## [Analysis and Forecast of Carbon Footprint from Agrifood Systems](/fao_project)
 [![Project 4](images/sankey_cover.jpg?raw=true)](/fao_project)

@@ -84,27 +84,6 @@ section li {
     margin-bottom: 10px;
 }
 
-/* Markdown styles */
-section h1, .markdown-content h1 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 32px; 
-  color: #000000;
-}
-
-section h2, .markdown-content h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #70706f;
-}
-
-section h3, .markdown-content h3 { 
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  color: #000000;
-}
-
 /* Image Styles */
 section img {
     max-width: 100%;
