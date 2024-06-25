@@ -1,250 +1,196 @@
-/* Homepage Styles */
-section a {
-    text-decoration: none; /* Remove underline */
-    color: inherit;         /* Inherit color from parent */
+:root {
+  --color-primary: #000000;
+  --color-secondary: #70706f;
+  --color-hover: #ADD8E6;
+  --font-primary: 'Lato', sans-serif;
+  --font-secondary: 'Abril Fatface', cursive;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-size: clamp(32px, 5vw, 40px);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: clamp(18px, 3vw, 20px);
+  color: var(--color-secondary);
+}
+
+h3 {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header Styles */
 header {
-    text-align: center; /* Center all elements within the header */
+  text-align: center;
 }
 
-header img { /* Specifically target the logo image */
-    display: block;    /* Make the image a block element */
-    margin: 0 auto 20px; /* Top/bottom margin of 0, left/right auto for centering */
+header img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
 }
 
-/* General Styles */
-body {
-    font-family: 'Lato', sans-serif; 
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
-    color: #000000;
+/* Special Styles */
+.phd {
+  color: var(--color-secondary);
+  margin-top: 5px;
 }
 
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Styles */
-header h1 {
-    font-family: 'Abril Fatface', cursive; 
-    font-size: 40px;
-    color: #000000;
-}
-
-header h2 { /* Was section h3 */
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #70706f;
-}
-
-header h3 { /* Same as body but bold */
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 18px; 
-    color: #000000;
-}
-
-header a {
-    text-decoration: none;
-}
-
-/* Section Styles */
-section h1 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 24px; 
-    color: #000000;
-}
-
-section h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #70706f;
-}
-
-section h3 { 
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: #000000;
-}
-
-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-section li {
-    margin-bottom: 10px;
-}
-
-/* Image Styles */
-section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-/* Footer Styles */
 footer {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.go-to-main a {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.go-to-main a:hover {
+  color: var(--color-hover);
 }
 
 /* Icon Styles */
 .icon-links {
-    display: flex; /* Enable flexbox for icons */
-    justify-content: center; /* Center icons horizontally */
-    align-items: center; /* Center icons vertically */
-    margin-top: 10px; /* Add top margin for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .icon-link img {
-    vertical-align: middle;
-    margin-right: 20px; /* Add right margin for spacing */
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
 }
 
-.icon-link img:last-child {
-    margin-right: 0; /* Remove margin for the last icon */
+.icon-link:last-child img {
+  margin-right: 0;
 }
 
-/* "Go to main" Link Styles */
-.go-to-main {
-  text-align: center; /* Center the link */
-  margin-top: 10px; /* Add top margin for spacing */
-}
-
-.go-to-main h4 {
-font-family: 'Lato', sans-serif;
-font-weight: bold;
-font-size: 18px;
-color: #000000; /* Black color for the text */
-}
-
-/* Add styles for the link */
-.go-to-main a {
-color: #000000; /* Black color for the link */
-text-decoration: none; /* Remove underline */
-}
-
-/* Add hover effect for the link */
-.go-to-main a:hover {
-color: #ADD8E6; /* Light blue color for the link on hover */
-}
-
+/* Profile Info */
 .profile-info {
-    max-width: 450px; /* Or adjust to your preferred width */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0px; /* Add padding for visual comfort */
+  max-width: 450px;
+  margin: 0 auto;
 }
 
+/* Portfolio Layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* iframe Styles */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Button Styles */
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.view-full-plot {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: var(--color-secondary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.view-full-plot:hover {
+  background-color: var(--color-hover);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+/* Horizontal Rule */
 hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background: var(--color-secondary);
+  margin: 20px 0;
 }
 
-.phd {
-    font-family: 'Lato', sans-serif; /* Use Lato for h4 */
-    font-weight: bold;               /* Make h4 bold */
-    font-size: 20px;
-    color: #70706f;
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
   }
+}
 
-  .about-me h4 {
-    font-family: 'Lato', sans-serif; /* Use the Lato font family */
-    font-size: 18px; /* Larger font size */
-    font-weight: bold; /* Bold font weight */
-    margin-bottom: 5px; /* Add some bottom margin for spacing */
+/* Print Styles */
+@media print {
+  .icon-links, .button-container {
+    display: none;
   }
+}
 
-  header {
-    text-align: center; /* Center all elements within the header */
-  }
-
-  .portfolio-columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-
-  .portfolio-columns .research-projects,
-  .portfolio-columns .personal-projects {
-    width: 48%;
-  }
-
-  .portfolio-columns .project img {
-    width: 100%;
-    height: auto;
-  }
-
-  .portfolio-columns .project {
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: 768px) {
-    .portfolio-columns {
-      flex-direction: column;
-    }
-    .portfolio-columns .research-projects,
-    .portfolio-columns .personal-projects {
-      width: 100%;
-    }
-  }
-
-  /* iframe Styles (like the plotly sankey) */
-
-  .iframe-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
-    max-width: 100%; /* Ensure it doesn't exceed its parent's width */
-    margin: 0 auto; /* Center the iframe container */
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 10px;
   }
   
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+  .portfolio-grid {
+    grid-template-columns: 1fr;
   }
-
-  @media (max-width: 768px) { /* Adjust breakpoint as needed */
-    .iframe-container {
-      padding-bottom: 100%; /* Change aspect ratio for mobile */
-    }
-  }
-
-  /* Buttom view on... style */
-
-  .button-container {
-    text-align: center;
-    margin-top: 10px; /* Adjust spacing as needed */
-  }
-  
-  .view-full-plot {
-    display: inline-block;
-    padding: 5px 15px;
-    background-color: #353a3d; /* Adjust to your preferred button color */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .view-full-plot:hover {
-    background-color: #222324; /* Darker shade on hover */
-  }
+}

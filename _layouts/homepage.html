@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
   {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -15,10 +17,10 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1 style="margin-bottom: 0px;"><a href="{{ '/' | absolute_url }}" style="color: black;">{{ site.title | default: site.github.repository_name }}</a></h1>
-      <h2 class="phd" style="margin-top: 0;">Data Scientist | PhD</h2>
+      <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <h2>Data Scientist | PhD</h2>
       {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Logo" style="margin-bottom: 15px;margin-top: 15px;" />
+        <img src="{{ site.logo | relative_url }}" alt="Logo" />
       {% endif %}
       <div class="about-me">
         <h3>About Me</h3>
@@ -26,27 +28,25 @@
       <div class="profile-info">
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         <div class="icon-links">
-          <a href="https://www.linkedin.com/in/ezequielmrivero/" class="icon-link">
-            <img src="/images/linkedin.svg" alt="LinkedIn Profile" style="width:32px; height:32px; margin-right: 10px;">
+          <a href="https://www.linkedin.com/in/ezequielmrivero/" class="icon-link" aria-label="LinkedIn Profile">
+            <img src="/images/linkedin.svg" alt="" width="32" height="32">
           </a>
-          <a href="https://github.com/ezemriv" class="icon-link">
-            <img src="/images/github.svg" alt="GitHub Profile" style="width:32px; height:32px; margin-right: 10px;">
+          <a href="https://github.com/ezemriv" class="icon-link" aria-label="GitHub Profile">
+            <img src="/images/github.svg" alt="" width="32" height="32">
           </a>
-          <a href="https://scholar.google.com/citations?user=Bg4eGzkAAAAJ&hl=en" class="icon-link">
-            <img src="/images/publications.svg" alt="Google Scholar Publications" style="width:32px; height:32px;">
+          <a href="https://scholar.google.com/citations?user=Bg4eGzkAAAAJ&hl=en" class="icon-link" aria-label="Google Scholar Publications">
+            <img src="/images/publications.svg" alt="" width="32" height="32">
           </a>
         </div>
       </div>
     </header>
     <hr>
-    <section>
-      <div style="text-align:center;">
-        <h1 style="font-size: 32px;">PORTFOLIO</h1>
-      </div>
+    <main>
+      <h1>PORTFOLIO</h1>
       <hr>
-      <div class="portfolio-columns">
+      <div class="portfolio-grid">
         <div class="research-projects">
-          <h1 style="text-align: center;">Research Projects</h1>
+          <h2>Research Projects</h2>
           <div class="project">
             {% capture research_projects %}
             {% include_relative research_projects.md %}
@@ -55,18 +55,19 @@
           </div>
         </div>
         <div class="personal-projects">
-          <h1 style="text-align: center;">Personal Projects</h1>
+          <h2>Personal Projects</h2>
           <div class="project">
             {% capture personal_projects %}
             {% include_relative personal_projects.md %}
             {% endcapture %}
             {{ personal_projects | markdownify }}
           </div>
+        </div>
       </div>
-    </section>
+    </main>
     <hr>
     <footer>
-      <p><small>Hosted on GitHub Pages</small></p>
+      <p><small>Hosted on GitHub Pages &copy; {{ 'now' | date: "%Y" }} {{ site.title | default: site.github.repository_name }}</small></p>
     </footer>
   </div>
   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
