@@ -28,7 +28,7 @@ h1, h2, h3 {
 
 h1 {
   font-family: var(--font-secondary);
-  font-size: clamp(32px, 5vw, 40px);
+  font-size: clamp(24px, 5vw, 32px);
 }
 
 h2 {

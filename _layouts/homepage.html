@@ -42,11 +42,11 @@
     </header>
     <hr>
     <main>
-      <h1>PORTFOLIO</h1>
+      <h1 class="text-center">PORTFOLIO</h1>
       <hr>
       <div class="portfolio-grid">
         <div class="research-projects">
-          <h2>Research Projects</h2>
+          <h1 class="text-center">Research Projects</h1>
           <div class="project">
             {% capture research_projects %}
             {% include_relative research_projects.md %}
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="personal-projects">
-          <h2>Personal Projects</h2>
+          <h1 class="text-center">Personal Projects</h1>
           <div class="project">
             {% capture personal_projects %}
             {% include_relative personal_projects.md %}
@@ -67,7 +67,7 @@
     </main>
     <hr>
     <footer>
-      <p><small>Hosted on GitHub Pages &copy; {{ 'now' | date: "%Y" }} {{ site.title | default: site.github.repository_name }}</small></p>
+      <p><small>Hosted on GitHub Pages</small></p>
     </footer>
   </div>
   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
