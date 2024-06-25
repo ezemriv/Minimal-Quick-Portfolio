@@ -17,7 +17,7 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <h1 style="margin-bottom: 0px; font-size: 40px;"><a href="{{ '/' | absolute_url }}" style="color: black;">{{ site.title | default: site.github.repository_name }}</a></h1>
       <h2>Data Scientist | PhD</h2>
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="Logo" />
@@ -42,11 +42,11 @@
     </header>
     <hr>
     <main>
-      <h1 class="text-center">PORTFOLIO</h1>
+      <h1 class="text-center large-heading">PORTFOLIO</h1>
       <hr>
       <div class="portfolio-grid">
         <div class="research-projects">
-          <h1 class="text-center">Research Projects</h1>
+          <h1 class="text-center medium-heading">Research Projects</h1>
           <div class="project">
             {% capture research_projects %}
             {% include_relative research_projects.md %}
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="personal-projects">
-          <h1 class="text-center">Personal Projects</h1>
+          <h1 class="text-center medium-heading">Personal Projects</h1>
           <div class="project">
             {% capture personal_projects %}
             {% include_relative personal_projects.md %}

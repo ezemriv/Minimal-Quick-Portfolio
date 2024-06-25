@@ -64,7 +64,7 @@ header img {
 /* Special Styles */
 .phd {
   color: var(--color-secondary);
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 footer {
@@ -79,6 +79,14 @@ footer {
 
 .go-to-main a:hover {
   color: var(--color-hover);
+}
+
+.large-heading {
+  font-size: 32px;
+}
+
+.medium-heading {
+  font-size: 24px;
 }
 
 /* Icon Styles */
