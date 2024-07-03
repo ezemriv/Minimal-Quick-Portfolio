@@ -227,6 +227,8 @@ preds, targs = learn.tta(dl=eval_dls.train)
 accuracy_score = accuracy(preds, targs).item()
 print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 ```
+![preds](images\cifar_preds.png "preds")
+
 
 <div class="button-container">
     <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
