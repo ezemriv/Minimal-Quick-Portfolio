@@ -209,3 +209,10 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+
+/* code style */
+code, pre {
+  font-family: monospace;  /* Use a monospaced font */
+  background-color: #f0f0f0; /* Light background */
+  padding: 10px;
+}
