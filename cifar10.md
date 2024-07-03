@@ -55,7 +55,6 @@ In just a few lines, this FastAI code accomplishes a lot:
 Final accuracy in validation data: **0.9717**
 
 ```python
-
 from fastai.vision.all import *
 
 # Set up path and data
@@ -88,10 +87,10 @@ To address this, custom code was implemented to create a dedicated test set from
 ### Final Results:
 
 - Validation final accuracy: **0.9675**
-- Evaluation accuracy on all evaluation samples: **0.9600**
-- Evaluation accuracy with TTA: **0.9706**
+- Evaluation accuracy on test images: **0.9600**
+- Evaluation accuracy on test images with TTA: **0.9706**
 
-### Code used:
+### Code used for custom splitting, train and predict:
 
 ```python
 from fastai.vision.all import *
@@ -139,6 +138,12 @@ def setup_cifar_files(path, reserved_size=10000):
 path = untar_data(URLs.CIFAR)
 temp_dir, reserved_files = setup_cifar_files(path)
 
+"""
+Number of files in train: 40000
+Number of files in test: 10000
+Number of reserved files: 10000
+"""
+
 # Define the DataBlock
 cifar_block = DataBlock(
     blocks=(ImageBlock, CategoryBlock),
@@ -163,6 +168,8 @@ learn.fit_one_cycle(5, slice(1e-6, 1e-4))
 preds, targs = learn.tta()
 print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 ```
+
+![custom train learner](images\learner_train.png "train")
 
 ```python
 # Function to set up the evaluation directory with reserved samples
