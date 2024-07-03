@@ -47,3 +47,4 @@ print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 
 # Save the model
 learn.save('final_model')
+```
