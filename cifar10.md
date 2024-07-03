@@ -46,6 +46,8 @@ By fine-tuning these models on the CIFAR-10 dataset, I further boosted classific
     <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
   </div>
 
+
+
 ## ResNet34 Implementation (from fast.ai)
 
 In just a few lines, this FastAI code accomplishes a lot:
@@ -83,6 +85,7 @@ learn.fit_one_cycle(5, slice(1e-6, 1e-4))
 preds, targs = learn.tta()
 print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 ```
+
 
 ## Custom Train, Val, Test Split
 
