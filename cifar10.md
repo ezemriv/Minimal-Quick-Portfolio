@@ -45,7 +45,7 @@ By fine-tuning these models on the CIFAR-10 dataset, I further boosted classific
 <div class="button-container">
     <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
   </div>
-  
+
 ## ResNet34 Implementation (from fast.ai)
 
 In just a few lines, this FastAI code accomplishes a lot:
@@ -66,6 +66,10 @@ path = untar_data(URLs.CIFAR)
 dls = ImageDataLoaders.from_folder(path, valid='test', item_tfms=Resize(224),
                                    batch_tfms=[*aug_transforms(size=224, min_scale=0.75),
                                                Normalize.from_stats(*imagenet_stats)])
+dls.show_batch()
+```
+![sample images](images\show_batch_fastai.png "images")
+```python
 # Create learner
 learn = vision_learner(dls, resnet34, metrics=[error_rate, accuracy])
 # Find learning rate
