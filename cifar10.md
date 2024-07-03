@@ -28,9 +28,7 @@ Techniques employed:
 - **Regularization**: Applied weight decay, utilized learning rate schedules.
 - **Global Average Pooling**: Replaced fully connected layers to reduce overfitting.
 
-### Best Test Accuracy (Architecture and Hyperparameter Tuning)
-
-**0.894 (Model 7)**
+### Best Test Accuracy (Architecture and Hyperparameter Tuning): **0.894**
 
 ## Transfer Learning Exploration
 
@@ -38,9 +36,7 @@ In the end, I explored the potential of transfer learning. I experimented with *
 
 By fine-tuning these models on the CIFAR-10 dataset, I further boosted classification accuracy.
 
-### Best Final Test Accuracy
-
-**0.9706 using ResNet34**
+### Best Final Test Accuracy: **0.9706 using ResNet34**
 
 ## ResNet34 Implementation (from fast.ai)
 
@@ -62,28 +58,21 @@ path = untar_data(URLs.CIFAR)
 dls = ImageDataLoaders.from_folder(path, valid='test', item_tfms=Resize(224),
                                    batch_tfms=[*aug_transforms(size=224, min_scale=0.75),
                                                Normalize.from_stats(*imagenet_stats)])
-
 # Create learner
 learn = vision_learner(dls, resnet34, metrics=[error_rate, accuracy])
-
 # Find learning rate
 learn.lr_find()
-
 # Fine-tune
 learn.fine_tune(4, freeze_epochs=1)
-
 # Unfreeze and train with discriminative learning rates
 learn.unfreeze()
 learn.fit_one_cycle(5, slice(1e-6, 1e-4))
-
 # Test Time Augmentation
 preds, targs = learn.tta()
 print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
-
-# Save the model
-learn.save('final_model')
 ```
-## Custom Train, Val, Test Split (Run in Kaggle) (Model 11)
+
+## Custom Train, Val, Test Split
 
 The CIFAR-10 dataset, in its standard format, is divided into 'train' and 'test' folders. FastAI's native ImageDataLoaders and DataBlocks, which are typically used to load such data, directly splits the data into training and validation sets.
 
@@ -96,6 +85,8 @@ To address this, custom code was implemented to create a dedicated test set from
 - Validation final accuracy: **0.9675**
 - Evaluation accuracy on all evaluation samples: **0.9600**
 - Evaluation accuracy with TTA: **0.9706**
+
+### Code used:
 
 ```python
 from fastai.vision.all import *
@@ -158,20 +149,14 @@ dls = cifar_block.dataloaders(path, bs=64)  # Adjust batch size (bs) as needed
 
 # Create learner
 learn = vision_learner(dls, resnet34, metrics=[error_rate, accuracy])
-
 # Fine-tune
 learn.fine_tune(4, freeze_epochs=1)
-
 # Unfreeze and train with discriminative learning rates
 learn.unfreeze()
 learn.fit_one_cycle(5, slice(1e-6, 1e-4))
-
 # Test Time Augmentation
 preds, targs = learn.tta()
 print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
-
-# Save the model
-learn.save('final_model')
 ```
 
 ```python
@@ -213,8 +198,11 @@ print(f"Evaluation accuracy on all evaluation samples: {eval_accuracy:.4f}")
 
 # Using test time augmentation
 preds, targs = learn.tta(dl=eval_dls.train)
-
 # Calculate accuracy
 accuracy_score = accuracy(preds, targs).item()
 print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 ```
+
+<div class="button-container">
+    <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View on GitHub</a>
+  </div>
