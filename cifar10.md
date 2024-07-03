@@ -55,6 +55,7 @@ In just a few lines, this FastAI code accomplishes a lot:
 Final accuracy in validation data: **0.9717**
 
 ```python
+
 from fastai.vision.all import *
 
 # Set up path and data
