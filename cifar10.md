@@ -227,6 +227,9 @@ preds, targs = learn.tta(dl=eval_dls.train)
 accuracy_score = accuracy(preds, targs).item()
 print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 ```
+
+### A sample of predictions:
+
 ![preds](images\cifar_preds.png "preds")
 
 
