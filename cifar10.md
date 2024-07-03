@@ -179,6 +179,8 @@ print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 
 ![custom train learner](images\learner_train.png "train")
 
+![lr](images\lr_vs_loss.png "lr")
+
 ```python
 # Function to set up the evaluation directory with reserved samples
 def setup_reserved_eval_dir(reserved_files, eval_dir):
