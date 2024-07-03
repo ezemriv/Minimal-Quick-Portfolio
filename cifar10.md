@@ -13,8 +13,8 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
 
 <img src="https://miro.medium.com/max/709/1*LyV7_xga4jUHdx4_jHk1PQ.png" 
         alt="Picture" 
-        width="800" 
-        height="600" 
+        width="600" 
+        height="400" 
         style="display: block; margin: 0 auto" />
 
 ## Initial Approach: Architecture Refinement
