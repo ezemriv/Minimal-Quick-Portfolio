@@ -7,3 +7,5 @@
 <img src="https://img.shields.io/badge/GeoPandas-white?logo=GeoPandas" style="height: 15px; width: auto;">
 <img src="https://img.shields.io/badge/Plotly-white?logo=plotly&logoColor=636efa" style="height: 15px; width: auto;">
 <img src="https://img.shields.io/badge/Scikit_learn-white?logo=scikitlearn&logoColor=F7931E" style="height: 15px; width: auto;">
+## [Neural Network Optimization for CIFAR10](/cifar10)
+[![Project 4](images\cifar10.png?raw=true)](/cifar10)
