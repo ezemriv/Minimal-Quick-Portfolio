@@ -42,6 +42,10 @@ By fine-tuning these models on the CIFAR-10 dataset, I further boosted classific
 
 ### Best Final Test Accuracy: **0.9706 using ResNet34**
 
+<div class="button-container">
+    <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
+  </div>
+  
 ## ResNet34 Implementation (from fast.ai)
 
 In just a few lines, this FastAI code accomplishes a lot:
@@ -216,5 +220,5 @@ print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 ```
 
 <div class="button-container">
-    <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View on GitHub</a>
+    <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
   </div>

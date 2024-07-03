@@ -1,6 +1,7 @@
 :root {
   --color-primary: #000000;
   --color-secondary: #1b5bd0;
+  --color-tertiary: #9a9ea5;
   --color-hover: #81c2d8;
   --font-primary: 'Lato', sans-serif;
   --font-secondary: 'Abril Fatface', cursive;
@@ -63,7 +64,7 @@ header img {
 
 /* Special Styles */
 .phd {
-  color: var(--color-secondary);
+  color: var(--color-tertiary);
   margin-top: 0px;
 }
 
@@ -181,7 +182,7 @@ footer {
 hr {
   border: 0;
   height: 1px;
-  background: var(--color-secondary);
+  background: var(--color-primary);
   margin: 20px 0;
 }
 
