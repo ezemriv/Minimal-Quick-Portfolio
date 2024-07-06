@@ -178,6 +178,10 @@ preds, targs = learn.tta()
 print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 ```
 
+<img src="images\learner_train.png"
+     alt="Picture" 
+     class="responsive-image" />
+
 ![custom train learner](images\learner_train.png "train")
 
 ![lr](images\lr_vs_loss.png "lr")
