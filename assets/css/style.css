@@ -187,6 +187,14 @@ hr {
   margin: 20px 0;
 }
 
+/* Default styles for images */
+.responsive-image {
+  display: block;
+  margin: 0 auto;
+  width: 600px; /* Default width for larger screens */
+  height: auto;
+}
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -209,5 +217,11 @@ hr {
   
   .portfolio-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Full width for images on mobile screens */
+  .responsive-image {
+    width: 100%; /* Full width for mobile screens */
+    height: auto;
   }
 }
