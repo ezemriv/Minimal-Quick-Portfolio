@@ -68,7 +68,12 @@ dls = ImageDataLoaders.from_folder(path, valid='test', item_tfms=Resize(224),
                                                Normalize.from_stats(*imagenet_stats)])
 dls.show_batch()
 ```
-![sample images](images\show_batch_fastai.png "images")
+
+<img src="images\show_batch_fastai.png"
+     alt="Picture" 
+     class="responsive-image" />
+
+
 ```python
 # Create learner
 learn = vision_learner(dls, resnet34, metrics=[error_rate, accuracy])
@@ -182,9 +187,9 @@ print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
      alt="Picture" 
      class="responsive-image" />
 
-![custom train learner](images\learner_train.png "train")
-
-![lr](images\lr_vs_loss.png "lr")
+<img src="images\lr_vs_loss.png"
+     alt="Picture" 
+     class="responsive-image" />
 
 ```python
 # Function to set up the evaluation directory with reserved samples
@@ -232,8 +237,9 @@ print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 
 ### A sample of predictions:
 
-![preds](images\cifar_preds.png "preds")
-
+<img src="images\cifar_preds.png"
+     alt="Picture" 
+     class="responsive-image" />
 
 <div class="button-container">
     <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
