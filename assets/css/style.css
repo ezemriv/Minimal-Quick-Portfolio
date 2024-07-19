@@ -71,7 +71,7 @@ header img {
 
 /* Special Styles */
 .phd {
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   margin-top: 0px;
 }
 
@@ -81,7 +81,7 @@ footer {
 }
 
 .go-to-main a {
-  color: var(--color-secondary);
+  color: var(--color-tertiary);
   font-weight: bold;
 }
 
@@ -169,7 +169,7 @@ footer {
 .view-full-plot {
   display: inline-block;
   padding: 5px 15px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-tertiary);
   color: white;
   text-decoration: none;
   border-radius: 5px;

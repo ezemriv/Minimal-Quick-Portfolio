@@ -3,7 +3,7 @@ layout: pages
 title: "cifar10 classification"
 ---
 
-## CIFAR10 Image Classification CNN Optimization (final >97% in test)
+# CIFAR10 Image Classification CNN Optimization (final >97% in test)
 
 In this project, I aim to systematically optimize a neural network classifier for this dataset, exploring both architectural modifications and the benefits of transfer learning.
 
