@@ -1,7 +1,7 @@
 :root {
   --color-primary: #000000;
-  --color-secondary: #1b5bd0;
-  --color-tertiary: #9a9ea5;
+  --color-secondary: #9a9ea5;
+  --color-tertiary: #1b5bd0;
   --color-hover: #81c2d8;
   --font-primary: 'Lato', sans-serif;
   --font-secondary: 'Abril Fatface', cursive;
@@ -23,7 +23,7 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin-top: 0;
 }
 
@@ -40,6 +40,13 @@ h2 {
 }
 
 h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: clamp(18px, 3vw, 20px);
+  color: var(--color-tertiary);
+}
+
+h4 {
   font-family: var(--font-primary);
   font-weight: bold;
   font-size: 18px;

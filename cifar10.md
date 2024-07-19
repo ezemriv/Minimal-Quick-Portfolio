@@ -3,11 +3,11 @@ layout: pages
 title: "cifar10 classification"
 ---
 
-# CIFAR10 Image Classification CNN Optimization (final >97% in test)
+## CIFAR10 Image Classification CNN Optimization (final >97% in test)
 
 In this project, I aim to systematically optimize a neural network classifier for this dataset, exploring both architectural modifications and the benefits of transfer learning.
 
-## The CIFAR-10 Dataset
+### The CIFAR-10 Dataset
 
 The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. There are 50,000 training images and 10,000 test images.
 
@@ -15,7 +15,7 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
      alt="Picture" 
      class="responsive-image" />
 
-## Initial Approach: Architecture Refinement
+### Initial Approach: Architecture Refinement
 
 Initially, I focused on refining the model architecture itself. I've created the CIFAR10ModelTester class to streamline the evaluation process.
 
@@ -30,15 +30,15 @@ Techniques employed:
 - **Regularization**: Applied weight decay, utilized learning rate schedules.
 - **Global Average Pooling**: Replaced fully connected layers to reduce overfitting.
 
-### Best Test Accuracy (Architecture and Hyperparameter Tuning): **0.894**
+#### Best Test Accuracy (Architecture and Hyperparameter Tuning): **0.894**
 
-## Transfer Learning Exploration
+### Transfer Learning Exploration
 
 In the end, I explored the potential of transfer learning. I experimented with **Xception** and **EfficientNetB2** from Keras, as well as **ResNet34** from FastAI.
 
 By fine-tuning these models on the CIFAR-10 dataset, I further boosted classification accuracy.
 
-### Best Final Test Accuracy: **0.9706 using ResNet34**
+#### Best Final Test Accuracy: **0.9706 using ResNet34**
 
 <div class="button-container">
     <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
@@ -46,7 +46,7 @@ By fine-tuning these models on the CIFAR-10 dataset, I further boosted classific
 
 
 
-## ResNet34 Implementation (from fast.ai)
+### ResNet34 Implementation (from fast.ai)
 
 In just a few lines, this FastAI code accomplishes a lot:
 
@@ -90,7 +90,7 @@ print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 ```
 
 
-## Custom Train, Val, Test Split
+### Custom Train, Val, Test Split
 
 The CIFAR-10 dataset, in its standard format, is divided into 'train' and 'test' folders. FastAI's native ImageDataLoaders and DataBlocks, which are typically used to load such data, directly splits the data into training and validation sets.
 
@@ -98,13 +98,13 @@ This lacks the flexibility to create a separate test set (unseen for the model) 
 
 To address this, custom code was implemented to create a dedicated test set from the original training data. This involved shuffling the images, reserving 10,000 for test, and organizing them into temporary directories for model training and evaluation using FastAI's DataBlock.
 
-### Final Results:
+#### Final Results:
 
 - Validation final accuracy: **0.9675**
 - Evaluation accuracy on test images: **0.9600**
 - Evaluation accuracy on test images with TTA: **0.9706**
 
-### Code used for custom splitting, train and predict:
+#### Code used for custom splitting, train and predict:
 
 ```python
 from fastai.vision.all import *
@@ -235,7 +235,7 @@ accuracy_score = accuracy(preds, targs).item()
 print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 ```
 
-### A sample of predictions:
+#### A sample of predictions:
 
 <img src="images\cifar_preds.png"
      alt="Picture" 
