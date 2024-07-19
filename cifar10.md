@@ -12,10 +12,8 @@ In this project, I aim to systematically optimize a neural network classifier fo
 The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. There are 50,000 training images and 10,000 test images.
 
 <img src="https://miro.medium.com/max/709/1*LyV7_xga4jUHdx4_jHk1PQ.png" 
-        alt="Picture" 
-        width="600" 
-        height="400" 
-        style="display: block; margin: 0 auto" />
+     alt="Picture" 
+     class="responsive-image" />
 
 ## Initial Approach: Architecture Refinement
 
@@ -70,7 +68,12 @@ dls = ImageDataLoaders.from_folder(path, valid='test', item_tfms=Resize(224),
                                                Normalize.from_stats(*imagenet_stats)])
 dls.show_batch()
 ```
-![sample images](images\show_batch_fastai.png "images")
+
+<img src="images\show_batch_fastai.png"
+     alt="Picture" 
+     class="responsive-image" />
+
+
 ```python
 # Create learner
 learn = vision_learner(dls, resnet34, metrics=[error_rate, accuracy])
@@ -180,9 +183,13 @@ preds, targs = learn.tta()
 print(f"Final accuracy: {accuracy(preds, targs).item():.4f}")
 ```
 
-![custom train learner](images\learner_train.png "train")
+<img src="images\learner_train.png"
+     alt="Picture" 
+     class="responsive-image" />
 
-![lr](images\lr_vs_loss.png "lr")
+<img src="images\lr_vs_loss.png"
+     alt="Picture" 
+     class="responsive-image" />
 
 ```python
 # Function to set up the evaluation directory with reserved samples
@@ -230,8 +237,9 @@ print(f"Evaluation accuracy with TTA: {accuracy_score:.4f}")
 
 ### A sample of predictions:
 
-![preds](images\cifar_preds.png "preds")
-
+<img src="images\cifar_preds.png"
+     alt="Picture" 
+     class="responsive-image" />
 
 <div class="button-container">
     <a href="https://github.com/ezemriv/CIFAR10_cnn_optimization" class="view-full-plot">View full code on GitHub</a>
