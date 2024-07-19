@@ -11,3 +11,7 @@
 ## [Neural Network Optimization for CIFAR10](/cifar10)
 #### >97% accuracy obtained on test
 [![cifar](images\cifar10.png?raw=true)](/cifar10)
+<img src="https://img.shields.io/badge/Python-white?logo=Python" style="height: 15px; width: auto;">
+<img src="https://img.shields.io/badge/NumPy-white?logo=numpy&logoColor=013243" style="height: 15px; width: auto;">
+<img src="https://img.shields.io/badge/TensorFlow-white?logo=TensorFlow" style="height: 15px; width: auto;">
+<img src="https://img.shields.io/badge/Keras-white?logo=Keras&logoColor=D00000" style="height: 15px; width: auto;">
