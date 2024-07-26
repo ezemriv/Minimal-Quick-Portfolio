@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/Plotly-white?logo=plotly&logoColor=636efa" style="height: 15px; width: auto;">
 <img src="https://img.shields.io/badge/Scikit_learn-white?logo=scikitlearn&logoColor=F7931E" style="height: 15px; width: auto;">
 
-## [Neural Network Optimization for CIFAR10](/cifar10)
+## [Neural Network Optimization for Image Classification](/cifar10)
 #### >97% accuracy obtained on test
 [![cifar](images\cifar10.jpg?raw=true)](/cifar10)
 <img src="https://img.shields.io/badge/Python-white?logo=Python" style="height: 15px; width: auto;">
