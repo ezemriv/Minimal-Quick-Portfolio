@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/HTML-white?logo=html5" style="height: 30px; width: auto;">  <img src="https://img.shields.io/badge/CSS-white?logo=css3&logoColor=1572B6" style="height: 30px; width: auto;">
+<img src="https://img.shields.io/badge/HTML-white?logo=html5" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/CSS-white?logo=css3&logoColor=1572B6" style="height: 25px; width: auto;">
 
 # Build Your Portfolio with Jekyll: A Quick Guide
 
